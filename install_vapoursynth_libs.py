@@ -60,7 +60,8 @@ def runCmd(cmd):
 		exit(1)
 
 def exitHelp():
-	print("install_vapoursynth_libs.py install/uninstall <64/32> <version> <install_prefix> <dlltool> <gendef> - e.g install_vapoursynth_libs.py 64 R49 /test/cross_compilers/....../ DLLTOOLPATH GENDEFPATH")
+	#print("install_vapoursynth_libs.py install/uninstall <64/32> <version> <install_prefix> <dlltool> <gendef> - e.g install_vapoursynth_libs.py 64 R49 /test/cross_compilers/....../ DLLTOOLPATH GENDEFPATH")
+	print("install_vapoursynth_libs.py install/uninstall <64/32> <version> <install_prefix> <dlltool> <gendef> - e.g install_vapoursynth_libs.py 64 R50 /test/cross_compilers/....../ DLLTOOLPATH GENDEFPATH")
 	exit(1)
 	
 def simplePatch(infile,replacetext,withtext):
