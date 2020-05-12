@@ -24,8 +24,9 @@ ifndef DLLTOOL
 $(error DLLTOOL is not set)
 endif
 
+# Default to latest Version 2020.05.12
 ifndef VAPOURSYNTH_VERSION
-$(error Please set VAPOURSYNTH_VERSION, e.g R50))
+VAPOURSYNTH_VERSION = R50
 endif
 
 all:
