@@ -30,6 +30,8 @@ VAPOURSYNTH_VERSION = R52
 endif
 
 all:
+	#@python2 install_vapoursynth_libs.py install $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
 	@python3 install_vapoursynth_libs.py install $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
 uninstall:
+	#@python2 install_vapoursynth_libs.py uninstall $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
 	@python3 install_vapoursynth_libs.py uninstall $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
