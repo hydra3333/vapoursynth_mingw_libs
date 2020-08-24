@@ -17,6 +17,7 @@
 _DEBUG = False
 
 import sys,os,urllib
+from urllib.request import urlretrieve # python3
 
 def is_tool(name):
         from distutils.spawn import find_executable
@@ -60,8 +61,6 @@ def runCmd(cmd):
 		exit(1)
 
 def exitHelp():
-	#print("install_vapoursynth_libs.py install/uninstall <64/32> <version> <install_prefix> <dlltool> <gendef> - e.g install_vapoursynth_libs.py 64 R49 /test/cross_compilers/....../ DLLTOOLPATH GENDEFPATH")
-	#print("install_vapoursynth_libs.py install/uninstall <64/32> <version> <install_prefix> <dlltool> <gendef> - e.g install_vapoursynth_libs.py 64 R50 /test/cross_compilers/....../ DLLTOOLPATH GENDEFPATH")
 	#print("install_vapoursynth_libs.py install/uninstall <64/32> <version> <install_prefix> <dlltool> <gendef> - e.g install_vapoursynth_libs.py 64 R51 /test/cross_compilers/....../ DLLTOOLPATH GENDEFPATH")
 	print("install_vapoursynth_libs.py install/uninstall <64/32> <version> <install_prefix> <dlltool> <gendef> - e.g install_vapoursynth_libs.py 64 R52 /test/cross_compilers/....../ DLLTOOLPATH GENDEFPATH")
 	exit(1)
