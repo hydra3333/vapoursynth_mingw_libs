@@ -26,10 +26,10 @@ endif
 
 # Default to latest Version 2020.05.12
 ifndef VAPOURSYNTH_VERSION
-VAPOURSYNTH_VERSION = R50
+VAPOURSYNTH_VERSION = R52
 endif
 
 all:
-	@python2 install_vapoursynth_libs.py install $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
+	@python3 install_vapoursynth_libs.py install $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
 uninstall:
-	@python2 install_vapoursynth_libs.py uninstall $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
+	@python3 install_vapoursynth_libs.py uninstall $(ARCH) $(VAPOURSYNTH_VERSION) $(PREFIX) $(DLLTOOL) $(GENDEF)
