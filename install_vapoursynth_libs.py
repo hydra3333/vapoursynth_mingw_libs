@@ -103,12 +103,10 @@ else:
 		runCmd("cp {0} ../bin".format("VapourSynth.dll"))
 		
 		pydName = "vapoursynth.cp38-win_amd64.pyd"
-		if float(ver_suff) >= 52: # Version 52 and above use python 3.8 and perhaps even works with 3.9
+		if float(ver_suff) >= 53: # Version 52 and above perhaps even works with 3.9
 			pydName = "vapoursynth.cp39-win_amd64.pyd"
 			VSS_PC = VSS_PC.replace("%%PY_VER_DOT%%","3.9").replace("%%PY_VER%%","39")
-			#pydName = "vapoursynth.cp38-win_amd64.pyd"
-			#VSS_PC = VSS_PC.replace("%%PY_VER_DOT%%","3.8").replace("%%PY_VER%%","38")
-		elif float(ver_suff) >= 49: # Version 49 and above use python 3.8 and perhaps even works with 3.9
+		elif float(ver_suff) >= 49: # Version 49 through 52 use python 3.8 only
 			pydName = "vapoursynth.cp38-win_amd64.pyd"
 			VSS_PC = VSS_PC.replace("%%PY_VER_DOT%%","3.8").replace("%%PY_VER%%","38")
 		elif float(ver_suff) > 44: # Version 45 and above use python 3.7		
